@@ -7,6 +7,7 @@
 - Bed dimensions should be set in printer setup, and should not allow any printing without configuring them
 - Allow the construction and usage of an instance of a printer reader, or something like that. Maybe call it GcodeReader
 - Work as a helper to drive the motors, using some kind of transformation between the raw parameters and the output to the motor driver, considering that the configuration and calibration of the motors will be executed by the printer firmware. Maybe this crate could use another one (or a module for that matter) that actually drives the motors and converts the needed input into the calibrated and transformed output
+- The printer should first scan the whole file to detemrmine if there's an error or unrecognized command inside the `gcode` file
 
 ## Printer (scope outside this crate)
 - Set up printer with the touchscreen
